@@ -3,14 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Visualizer</title>
-    <meta name="description" content="An audio visualizer for a song">
+    <title>Audio Player</title>
+    <meta name="description" content="A music player with song information">
     <meta name="author" content="Adrienne Cheng">
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> <!--adding in icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@500;700&display=swap" rel="stylesheet"> <!-- fonts -->
 
 </head>
 <body>
+    <div class="container">
 
-    <audio src="/audio/BoxCat_Games_-_10_-_Epic_Song.mp3" controls></audio>
+        <!-- left side - layout for general artist/album info -->
+
+        <div class="left-side">
+
+              <div class="logo">ORIB MUSIC</div>
+
+              <div class="year">EST 2020</div>
+
+              <div class="cover">
+                    <div class="play">
+                          <ion-icon name="play-outline"></ion-icon>
+                    </div>
+              </div>
+
+              <div class="data">
+
+                    <div class="album-name">
+                    <p id="name">Tranquilize</p>
+                    </div>
+
+                    <div class="album-artist">
+                    <p id="artist">Purple Planet Music</p>
+                    </div>
+
+              </div>
+
+              <div class="block-cover"></div>
+
+              <div class="buy">
+                    <p id="more">Buy now</p>
+              </div>
+
+        </div>
+
+        <!-- right side: more detailed info about song + artist -->
+        <div class="right-side">
+
+              <div class="upper">
+
+                    <div class="about">
+
+                          <h1>Song info</h1>
+                          <div class="album-name2">
+                          <p><ion-icon name="musical-notes-outline"></ion-icon> &nbsp;<span>Tranquilize</span></p>
+                          </div>
+
+                          <div class="album-artist2">
+                          <p><ion-icon name="person-outline"></ion-icon>  &nbsp;<span>Purple Planet Music</span></p>
+                          </div>
+
+                          <div class="album-genre2">
+                          <p><ion-icon name="folder-outline"></ion-icon>  &nbsp;<span>Chilled</span></p>
+                          </div>
+
+                          <div class="media">
+
+                                <p>Share now : </p>
+
+                                <ul>
+                                      <li><ion-icon name="logo-youtube"></ion-icon></li>
+                                      <li><ion-icon name="logo-instagram"></ion-icon></li>
+                                      <li><ion-icon name="logo-twitter"></ion-icon></li>
+
+                                </ul>
+
+                          </div>
+
+                    </div>
+
+              </div>
+                    <!-- diff artist to check out -->
+
+              <div class="upper-block"></div>
+
+              <div class="bottom">
+                    <div class="next">
+                          <ion-icon name="play-forward-outline"></ion-icon>
+                    </div>
+
+                    <div class="data2">
+
+                          <div class="album-name3">
+                          <p id="name">Free Spirit</p>
+                          </div>
+
+                          <div class="album-artist3">
+                          <p id="artist">Unknown</p>
+                          </div>
+
+                    </div>
+
+
+                    <div class="more">
+                          <p id="more">Related Songs...</p>
+                    </div>
+
+              </div>
+              <div class="block-bottom"></div>
+
+        </div>
+
+  </div>
+    <script type="text/javascript"></script>
+    <audio src="/audio/tranquilize.mp3" controls></audio>
 
 </body>
 </html>
