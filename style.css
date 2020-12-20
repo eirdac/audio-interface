@@ -6,13 +6,35 @@ html, body {
 
     width: 100%;
     height: 100%;
+
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #ffffff;
 }
 
-.album-artist {
+#artist {
     font-family: 'Bebas Neue', cursive;
 }
 
-.album-name {
+#name {
     font-family: 'Darker Grotesque', sans-serif;
 }
 
+
+
+
+/* sections */
+
+.left-side, .right-side {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+}
+
+.left-side {
+    background: #06053d;
+}
+
+.right-side {
+    left: 50%;
+    background: #a18885
+}
