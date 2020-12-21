@@ -5,4 +5,5 @@ A simple music player featuring the artist name, song title, and genre. Sections
 
 References Used:
 - https://developer.mozilla.org/en-US/docs/Web/API/EventListener
+- icons: https://ionicons.com/
 - 

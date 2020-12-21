@@ -99,6 +99,13 @@ html, body {
     letter-spacing: 4px;
 }
 
+.reload-btn {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-left: 15%;
+    border: #ffffff;
+}
+
 .play, .next ion-icon {
     position: absolute;
     top: 25%;
@@ -163,7 +170,7 @@ html, body {
 .share-now ul li {
     display: inline-block;
     color: #ffffff;
-    padding: 0 15px 0 15px;
+    padding: 0 7px 0 7px;
 }
 
 .next-icon {
