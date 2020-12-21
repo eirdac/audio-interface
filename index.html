@@ -8,7 +8,7 @@
     <meta name="author" content="Adrienne Cheng">
 
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> <!--adding in icons-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 
@@ -29,21 +29,26 @@
                     </div>
              </div>
 
+            <div class="instructions"> <!-- instructions for the user -->
+                  <p id="text"><ion-icon name="musical-note-outline"></ion-icon>click to play and pause the music</p>
+            </div>
+
                   <div class="album-img">
                   
-                        <img id="clickImageMusic" src="/audio-interface/img/pexels-pixabay-210766.jpg" alt="artist image">
+                        <img id="clickImageMusic" src="img/pexels-pixabay-210766.jpg" alt="artist image">
                   
                   </div>
 
+
             <div class="album-info">
 
-                    <div class="album-name">
+                  <div class="album-name">
                     <p id="name">Tranquilize</p>
-                    </div>
+                  </div>
 
-                    <div class="album-artist">
+                  <div class="album-artist">
                     <p id="artist">Purple Planet Music</p>
-                    </div>
+                  </div>
 
               </div>
 
@@ -102,7 +107,7 @@
 
               <div class="bottom">
                   
-                    <div class="artist2-info">
+                    <div class="artist2-info slide-in-top">
 
                           <div class="next-song">
                           <p id="name">Free Spirit</p>
@@ -115,6 +120,7 @@
                           <div class="next-icon">
                               <ion-icon name="play-forward-outline"></ion-icon>
                           </div>
+
 
                     </div>
 
@@ -129,9 +135,10 @@
         </div>
 
   </div>
-    <script src="./audio-interface/index.js"></script>
-    <audio id="audio" src="./audio-interface/audio/tranquilize.mp3" ></audio>
-    <audio id="audio-two" src="./audio-interface/audio/Free Spirit.mp3" ></audio>
+
+    <script src="index.js"></script>
+    <audio id="audio" src="audio/tranquilize.mp3" ></audio>
+    <audio id="audio-two" src="audio/Free Spirit.mp3" ></audio>
 
 </body>
 </html>
