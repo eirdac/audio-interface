@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎶 Audio Player</title>
+    <title>🔷 Audio Player</title>
     <meta name="description" content="A music player with song information">
     <meta name="author" content="Adrienne Cheng">
 
@@ -27,7 +27,7 @@
                     <div class="play">
                           <ion-icon name="play-outline"></ion-icon>
                     </div>
-        </div>
+             </div>
 
                   <div class="album-img">
                   
@@ -35,7 +35,7 @@
                   
                   </div>
 
-            <div class="data">
+            <div class="album-info">
 
                     <div class="album-name">
                     <p id="name">Tranquilize</p>
@@ -97,11 +97,8 @@
 
 
               <div class="bottom">
-                    <div class="next">
-                          <ion-icon name="play-forward-outline"></ion-icon>
-                    </div>
-
-                    <div class="data2">
+                  
+                    <div class="artist2-info">
 
                           <div class="next-song">
                           <p id="name">Free Spirit</p>
@@ -109,6 +106,10 @@
 
                           <div class="next-artist">
                           <p id="artist">Unknown</p>
+                          </div>
+
+                          <div class="next-icon">
+                              <ion-icon name="play-forward-outline"></ion-icon>
                           </div>
 
                     </div>
@@ -125,7 +126,8 @@
 
   </div>
     <script src="/audio-interface/index.js"></script>
-    <audio id="audio" src="/audio-interface/audio/tranquilize.mp3" controls></audio>
+    <audio id="audio" src="/audio-interface/audio/tranquilize.mp3" ></audio>
+    <audio id="audio-two" src="/audio-interface/audio/Free Spirit.mp3" ></audio>
 
 </body>
 </html>

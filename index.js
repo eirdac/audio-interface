@@ -6,3 +6,10 @@ document.getElementById("clickImageMusic").onclick = function() {
     else audio.pause();
 };
 
+
+document.getElementById("next-icon").onclick = function() {
+    var audio = document.getElementById("audio-two");
+    if (audio.paused) audio.play();
+    else audio.pause();
+};
+
