@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Player</title>
+    <title>🎶 Audio Player</title>
     <meta name="description" content="A music player with song information">
     <meta name="author" content="Adrienne Cheng">
 
@@ -19,7 +19,7 @@
 
         <div class="left-side">
 
-              <div class="logo">ORIB MUSIC</div>
+              <div class="music-label">ORIB MUSIC</div>
 
               <div class="year">EST 2020</div>
 
@@ -27,9 +27,15 @@
                     <div class="play">
                           <ion-icon name="play-outline"></ion-icon>
                     </div>
-              </div>
+        </div>
 
-              <div class="data">
+                  <div class="album-img">
+                  
+                        <img id="clickImageMusic" src="/audio-interface/img/pexels-pixabay-210766.jpg" alt="artist image">
+                  
+                  </div>
+
+            <div class="data">
 
                     <div class="album-name">
                     <p id="name">Tranquilize</p>
@@ -43,8 +49,8 @@
 
               <div class="block-cover"></div>
 
-              <div class="buy">
-                    <p id="more">Buy now</p>
+              <div class="cta">
+                    <p id="more">Stream Now</p>
               </div>
 
         </div>
@@ -69,7 +75,7 @@
                           <p><ion-icon name="folder-outline"></ion-icon>  &nbsp;<span>Chilled</span></p>
                           </div>
 
-                          <div class="media">
+                          <div class="share-now">
 
                                 <p>Share now : </p>
 
@@ -89,6 +95,7 @@
 
               <div class="upper-block"></div>
 
+
               <div class="bottom">
                     <div class="next">
                           <ion-icon name="play-forward-outline"></ion-icon>
@@ -96,11 +103,11 @@
 
                     <div class="data2">
 
-                          <div class="album-name3">
+                          <div class="next-song">
                           <p id="name">Free Spirit</p>
                           </div>
 
-                          <div class="album-artist3">
+                          <div class="next-artist">
                           <p id="artist">Unknown</p>
                           </div>
 
@@ -118,7 +125,7 @@
 
   </div>
     <script src="/audio-interface/index.js"></script>
-    <audio src="/audio/tranquilize.mp3" controls></audio>
+    <audio id="audio" src="/audio-interface/audio/tranquilize.mp3" controls></audio>
 
 </body>
 </html>

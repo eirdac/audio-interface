@@ -1,22 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darker+Grotesque:wght@500;700&display=swap');
 
+:root {
+    --yellow-accent: #f0d394;
+    --dark-yellow: rgb(219, 192, 117);
+    --navy-main: #0C1A3F;
+    --pale-blue: #8b9baf;
+    --bold-font: 'Bebas Neue', cursive;
+    --copy-font: 'Darker Grotesque', sans-serif;
+
+}
+
+
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 
     width: 100%;
     height: 100%;
 
-    font-family: 'Darker Grotesque', sans-serif;
-    color: #ffffff;
+    font-family: var(--bold-font);
 }
 
 #artist {
-    font-family: 'Bebas Neue', cursive;
+    font-family: var(--bold-font);
 }
 
 #name {
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: var(--copy-font);
 }
 
 
@@ -31,10 +41,159 @@ html, body {
 }
 
 .left-side {
-    background: #06053d;
+    background: var(--navy-main);
 }
 
 .right-side {
     left: 50%;
-    background: #a18885
+    background: var(--pale-blue);
+}
+
+
+/* other info */
+
+
+.music-label {
+    font-family: var(--copy-font);
+    color: #ffffff;
+    position: fixed;
+    margin: 1.4em;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.year {
+    position: absolute;
+    color: #ffffff;
+    font-family: var(--bold-font);
+    bottom: 8%;
+    font-weight: 300;
+    transform: rotate(-90deg); /* transform to get the year to be vertical on the side */
+    left: 0%;
+}
+
+.cta {
+    color: var(--yellow-accent);
+    text-transform: uppercase;
+    font-family: var(--copy-font);
+    text-decoration: underline;
+    position: absolute;
+    right: 0%;
+    top: -2.6%;
+    margin: 1.4em;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+
+.data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: var(--bold-font);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.play, .next ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+    opacity: 0.6;
+    border-radius: 50%;
+    border: 1px #ffffff;
+    padding: 2em;
+
+}
+
+
+#clickImageMusic {
+    position: relative;
+    width: 50%;
+    height: 70%;
+    display:inline-block;
+
+    padding: 0px 20px 0px 20px;
+}
+
+.about {
+    position: absolute;
+    top: 40%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+.about h1 {
+    font-weight: 800;
+    color: var(--dark-yellow);
+    filter: drop-shadow(8px 4px 3px var(--navy-main)); /* drop shadow to make it more readable on the blue */
+    font-family: var(--bold-font);
+    text-transform: uppercase;
+}
+
+.about p {
+    color: #ffffff;
+    font-family: var(--copy-font);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.60em;
+}
+
+.share-now {
+    margin-top: 40px;
+}
+
+.share-now p {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.share-now ul {
+    position: absolute;
+    list-style: none;
+    left: -24%;
+}
+
+.share-now ul li {
+    display: inline-block;
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+.next {
+    position: absolute;
+    top: 24%;
+    left: 16%;
+}
+
+.data2 {
+    position: absolute;
+    top: 12%;
+    left: 28%;
+    color: var(--yellow-accent);
+    font-family: var(--bold-font);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.more {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    font-size: 15px;
+    color: #f4c8ad;
+    text-transform: uppercase;
+    font-family: var(--bold-font);
+    text-decoration: underline;
+}
+
+.block-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 50%;
 }
