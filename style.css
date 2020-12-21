@@ -247,16 +247,14 @@ html, body {
 
 
 
-
-
 .more {
     position: absolute;
-    top: 80%;
+    top: 3%;
     left: 10%;
     font-size: 15px;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: var(--bold-font);
+    font-family: var(--copy-font);
     text-decoration: underline;
     letter-spacing: 2px;
 }

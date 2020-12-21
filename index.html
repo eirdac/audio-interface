@@ -30,7 +30,7 @@
              </div>
 
             <div class="instructions"> <!-- instructions for the user -->
-                  <p id="text"><ion-icon name="musical-note-outline"></ion-icon>click to play and pause the music</p>
+                  <p id="text"><ion-icon name="musical-note-outline"></ion-icon>click image to play and pause the music</p>
             </div>
 
                   <div class="album-img">
@@ -53,7 +53,7 @@
               </div>
 
             <div class="reload-btn">
-                  <ion-icon name="refresh-outline"></ion-icon>
+                  <p id="reload"><ion-icon name="refresh-outline"></ion-icon></p>
             </div>
 
               <div class="block-cover"></div>
@@ -108,6 +108,10 @@
               <div class="bottom">
                   
                     <div class="artist2-info slide-in-top">
+                        
+                        <div class="more">
+                        <p id="more">Next Artist...</p>
+                        </div>
 
                           <div class="next-song">
                           <p id="name">Free Spirit</p>
@@ -118,16 +122,13 @@
                           </div>
 
                           <div class="next-icon">
-                              <ion-icon name="play-forward-outline"></ion-icon>
+                              <p id="forwardicon"><ion-icon name="play-forward-outline"></ion-icon></p>
                           </div>
 
+                          <!-- <button id="playOrPause"><ion-icon name="play-forward-outline"></ion-icon></button> -->
 
-                    </div>
 
-
-                    <div class="more">
-                          <p id="more">Related Songs...</p>
-                    </div>
+                  </div>
 
               </div>
               <div class="block-bottom"></div>
@@ -137,8 +138,8 @@
   </div>
 
     <script src="index.js"></script>
-    <audio id="audio" src="audio/tranquilize.mp3" ></audio>
-    <audio id="audio-two" src="audio/Free Spirit.mp3" ></audio>
+    <audio id="audio" src="audio/tranquilize.mp3"></audio>
+    <audio id="audio-two" src="audio/Free Spirit.mp3"></audio>
 
 </body>
 </html>
